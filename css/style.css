@@ -1,0 +1,241 @@
+
+/***RESET***/
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+
+  }
+/**Header Encabezado***/
+header {
+    width: 100vw;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+}
+header h1 {
+    padding: 16px;
+    font-size: 4.0rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(21, 20, 20);
+    border: solid 1px rgb(21, 20, 20);
+    border-radius: 5px;
+    box-shadow: 3px 15px 20px -18px rgba(0,0,0,0.83);
+
+}
+
+
+main {
+    background-color: whitesmoke;    
+}
+/***Main Section***/
+.seleccionar-dranmon {
+    width: 90vw;
+    height: auto;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 20px;
+    border: solid 3px rgb(21, 21, 21);
+    border-radius: 8px;
+    background-color: whitesmoke;
+    box-shadow: 3px 15px 20px -18px rgba(0,0,0,0.83);
+
+  
+}
+.seleccionar-dranmon h2 {
+    margin: 35px 10px;
+    padding: 20px;
+    font-size: 3.0rem;
+    text-align: center;
+    color: rgb(21, 21, 21);
+    text-transform: uppercase;
+}
+.options-dranmon {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+}
+/***Cartas de Personajes***/
+.cards {
+    width: 270px;
+    height: 380px;
+    padding: 8px;
+    margin: 16px;
+    background-color: #154360 ;
+    border: solid 1px black;
+    border-radius: 8px;
+    box-shadow: 3px 8px 10px 0px rgba(0,0,0,0.8);
+    opacity: 0.9;
+    transition: 150ms;
+}
+.cards:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+.cards img {
+    width: 230px;
+    height: 260px;
+    margin-bottom: 5px;
+}
+.cards .name-dr {
+    width: 100%;
+    height: 200px;
+    font-size: 2.4rem;
+    font-weight: 700;
+    padding: 6px;
+    color: whitesmoke;
+}
+.cards p {
+    font-size: 1.6rem;
+    font-weight: 700;
+    padding-top: 6px;
+    color: whitesmoke;
+}
+
+input { 
+    display: none;
+
+}
+.button-select {
+    margin-top: 20px;
+    text-align: center;
+}
+.button-select button {
+    margin: 35px 10px;
+    width: 260px;
+    height: 80px;
+    font-size: 2.6rem;
+    font-weight: 700;
+    padding: 12px;
+    border-radius: 12px;
+    text-transform: uppercase;
+    border: none;
+    background-color:  rgb(21, 20, 20);
+    color: whitesmoke;
+    box-shadow: 3px 8px 10px 0px rgba(0,0,0,0.8);
+    opacity: 0.8;
+    transition: 150ms all;
+}
+.button-select button:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    opacity: 1;
+}
+/***Section Ataques***/
+.seleccion-atack {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(21, 20, 20);;
+
+}
+.seleccion-atack h2 {
+    margin: 25px 10px;
+    padding: 10px;
+    font-size: 2.6rem;
+    text-transform: uppercase;
+    color: aliceblue;
+}
+.seleccion-atack p {
+    font-size: 2.8rem;
+    padding: 6px;
+    color: whitesmoke;
+}
+.atack-buttons {
+    margin-top: 25px;
+}
+.btn-atack {
+    width: 160px;
+    margin: 16px;
+    padding: 12px;
+    font-size: 2.0rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    background-color: #315383;
+    color: whitesmoke;
+   
+}
+.dranmon-player {
+    color: green;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.dranmon-enemy {
+    color: red;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.mensajes {
+    width: 90vw;
+    height: auto;
+    margin: 0 auto;
+   
+}
+.mensajes p {
+    margin-top: 25px;
+    padding: 10px;
+    font-size: 2.6rem;
+    text-align: center;
+}
+
+.dranmon-card {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 250px;
+    height: 360px;
+    background-color: aqua;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 8px;
+    font-size: 3.0rem;
+    font-weight: 700;
+    color: black;
+    text-transform: uppercase;
+    font-style: italic;
+    cursor: pointer;
+
+}
+.dranmon-rangor {
+    background-image: url(../imgs/rangor.jpg);
+    color: whitesmoke;
+}
+
+.dranmon-capron {
+    background-image: url(../imgs/capron.jpg);
+    color: whitesmoke;
+}
+.dranmon-feront {
+    background-image: url(../imgs/feront.jpg);
+    color: whitesmoke;
+}
+.dranmon-lortus {
+    background-image: url(../imgs/lortus.jpg);
+    color: whitesmoke;
+}
+.dranmon-termer {
+    background-image: url(../imgs/termer.jpg);
+    color: whitesmoke;
+
+}   
+.dranmon-pydors {
+    background-image: url(../imgs/pydors.jpg);
+    color: whitesmoke;
+
+}

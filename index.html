@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,9 +9,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap" rel="stylesheet">
     <script src="./js/script.js"></script>
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
     <header>
         <h1>Dranmon Game</h1>
@@ -22,81 +27,90 @@
             <!--Dranmons-->
 
             <article class="options-dranmon">
-                <div class="cards"> 
-                    
+                <div class="cards">
+
                     <label class="dranmon-card dranmon-rangor" for="rangor">Rangor</label>
                     <input type="radio" name="dranmon" id="rangor">
-                 
+
                 </div>
-                <div class="cards"> 
-                   
+                <div class="cards">
+
                     <label class="dranmon-card dranmon-capron" for="capron">Capron</label>
                     <input type="radio" name="dranmon" id="capron">
-                    
+
                 </div>
-                <div class="cards"> 
-                    
+                <div class="cards">
+
                     <label class="dranmon-card dranmon-feront" for="feront">Feront</label>
                     <input type="radio" name="dranmon" id="feront">
-                   
+
                 </div>
 
-                <div class="cards"> 
-                   
+                <div class="cards">
+
                     <label class="dranmon-card dranmon-lortus" for="lortus">Lortus</label>
                     <input type="radio" name="dranmon" id="lortus">
-                   
+
                 </div>
-                <div class="cards"> 
-                   
+                <div class="cards">
+
                     <label class="dranmon-card dranmon-termer" for="termer">Termer</label>
                     <input type="radio" name="dranmon" id="termer">
-                   
+
                 </div>
-                
-                 <div class="cards">   
+
+                <div class="cards">
 
                     <label class="dranmon-card dranmon-pydors" for="pydors">Pydors</label>
                     <input type="radio" name="dranmon" id="pydors">
-                
+
                 </div>
 
-   
+
 
             </article>
-            
+
             <div id="btn-select" class="button-select">
                 <button>Seleccionar</button>
             </div>
         </section>
-        
-        
-        
-        
+
+
+
+
         <section id="select-atack" class="seleccion-atack">
             <h2>Elige Tu ataque</h2>
 
-            <p>Tu Dranmon <span id="dranmon-jugador" class="dranmon-player"></span> tiene <span id="vidas-jugador">3</span> vidas</p>
-            <p>El Dranmon <span id="dranmon-enemigo" class="dranmon-enemy"></span> del enemigo tiene <span id="vidas-enemigo">3</span> vidas</p>
-            
             <div class="atack-buttons">
-                <button id="btn-fuego" class="btn-atack">Fuego 🔥</button>
-                <button id="btn-agua" class="btn-atack">Agua 💧</button>
-                <button id="btn-tierra" class="btn-atack">Tierra 🪴</button>
+                <button id="btn-fuego" class="btn-atack">Fuego</button>
+                <button id="btn-agua" class="btn-atack">Agua</button>
+                <button id="btn-tierra" class="btn-atack">Tierra</button>
             </div>
-
-        </section>
-
-        <section id="mensajes" class="mensajes">
+           
             
-        </section>
-
-        <section id="reiniciar">
+            
             <div>
-                <button id="btn-reiniciar">Reiniciar</button>
+                <section id="mensajes" class="mensajes">
+                </section>
+                
+                <section id="reiniciar">
+                    <button id="btn-reiniciar">Reiniciar</button>
+                </section>
+            </div>
+              
+              <div class="contador-vidas">
+                <div class="contador contador-jugador">
+                    <p>Jugador <span id="dranmon-jugador" class="dranmon-player"></span> tiene vidas <span
+                        id="vidas-jugador">3</span></p>
+                </div>
+                <div class="contador contador-enemigo">
+                    <p>Enemigo <span id="dranmon-enemigo" class="dranmon-enemy"></span> tiene vidas <span
+                        id="vidas-enemigo">3</span></p>  
+                </div>
             </div>
         </section>
     </main>
-    
+
 </body>
+
 </html>

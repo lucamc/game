@@ -8,35 +8,48 @@
   html {
     font-size: 62.5%;
     font-family: 'Roboto', sans-serif;
+    font-family: 'Mouse Memoirs', sans-serif;
+
     
   }
+  
+  body {
+   background-color: rgba(28,93,228,1);
+  }
+ 
 /**Header Encabezado***/
 header {
     width: 100vw;
-    height: 120px;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: whitesmoke;
+    background-color: rgba(178,216,255,1);
+    overflow: hidden; 
+
+   
 }
 header h1 {
     padding: 16px;
-    font-size: 4.0rem;
+    font-size: 8.0rem;
     text-align: center;
     text-transform: uppercase;
-    color: rgb(21, 20, 20);
-    border: solid 1px rgb(21, 20, 20);
-    border-radius: 5px;
-    box-shadow: 3px 15px 20px -18px rgba(0,0,0,0.83);
+    color: rgb(39, 39, 39);
+    letter-spacing: 0.5rem;
+    font-family: 'Mouse Memoirs', sans-serif;
 
 }
 
 
 main {
-    background-color: whitesmoke;  
+    height: auto;
+    background-color: #7fabcf;
+    background: linear-gradient(0deg, rgba(28,93,228,1) 0%, rgba(178,216,255,1) 100%);
     overflow: hidden; 
- 
-  
+    background-color: #7fabcf;
+    background-size: contain;
+
+
 }
 /***Main Section***/
 .seleccionar-dranmon {
@@ -47,17 +60,16 @@ main {
     flex-direction: column;
     padding: 20px;
     border-radius: 8px;
-    background-color: whitesmoke;
-   
-
+  
   
 }
 .seleccionar-dranmon h2 {
     margin: 20px 10px;
     padding: 10px;
     font-size: 3.0rem;
+    font-family: 'Roboto';
     text-align: center;
-    color: rgb(21, 21, 21);
+    color: black;
     text-transform: uppercase;
 }
 .options-dranmon {
@@ -67,9 +79,7 @@ main {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    padding: 20px;
-    background-color: #8e9aab53;
-    box-shadow: -1px 1px 20px 0px rgba(0, 0, 0, 0.686);
+    padding: 20px;    
 
 }
 /***Cartas de Personajes***/
@@ -78,7 +88,7 @@ main {
     height: 320px;
     padding: 8px;
     margin: 16px;
-    background-color:rgba(21, 21, 21, 0.81);
+    background-color:rgba(85, 84, 90, 0.81);
     border: solid 1px black;
     border-radius: 8px;
     box-shadow: 3px 8px 10px 0px rgba(0,0,0,0.8);
@@ -88,6 +98,7 @@ main {
 .cards:hover {
     transform: scale(1.1);
     opacity: 1;
+    background-color:rgba(12, 106, 189, 0.81);
 }
 .cards img {
     width: 230px;
@@ -97,18 +108,11 @@ main {
 .cards .name-dr {
     width: 100%;
     height: 200px;
-    font-size: 2.4rem;
+    font-size: 3.0rem;
     font-weight: 700;
     padding: 6px;
     color: whitesmoke;
 }
-.cards p {
-    font-size: 1.6rem;
-    font-weight: 700;
-    padding-top: 6px;
-    color: whitesmoke;
-}
-
 input { 
     display: none;
 
@@ -124,77 +128,127 @@ input {
     font-size: 2.6rem;
     font-weight: 700;
     padding: 12px;
-    border-radius: 12px;
+    border-radius: 40px;
     text-transform: uppercase;
     border: none;
-    background-color:  rgb(21, 20, 20);
+    background-color:  rgb(84, 84, 84);
     color: whitesmoke;
     box-shadow: 3px 8px 10px 0px rgba(0,0,0,0.8);
-    opacity: 0.8;
     transition: 150ms all;
 }
 .button-select button:hover {
     transform: scale(1.2);
     cursor: pointer;
-    opacity: 1;
+    background-color:  rgb(42, 41, 41);
+
 }
 /***Section Ataques***/
 .seleccion-atack {
     width: 100vw;
     height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgb(21, 20, 20);;
-
+    font-family: 'Roboto';;
 }
 .seleccion-atack h2 {
-    margin: 25px 10px;
+    margin-top: 5%;
     padding: 10px;
-    font-size: 2.6rem;
+    font-size: 3.0rem;
+    text-align: center;
     text-transform: uppercase;
-    color: aliceblue;
+    color: black;
 }
 .seleccion-atack p {
     font-size: 2.8rem;
     padding: 6px;
-    color: whitesmoke;
+    color: black;
 }
 .atack-buttons {
     margin-top: 25px;
+    text-align: center;
 }
 .btn-atack {
-    width: 160px;
+    
+    width: 180px;
     margin: 16px;
-    padding: 12px;
-    font-size: 2.0rem;
+    margin-bottom: 2%;
+    padding: 16px;
+    font-size: 2.4rem;
     font-weight: 700;
     border: none;
     border-radius: 10px;
     background-color: #315383;
     color: whitesmoke;
-   
+    transition: 150ms all;
 }
-.dranmon-player {
-    color: green;
+#btn-fuego:hover {
+    background-color: rgb(242, 45, 45);
+    color: black;
+}
+
+#btn-agua:hover {
+    background-color: blue;
+    color: black;
+}
+
+#btn-tierra:hover {
+    background-color: #804000;
+    color: black;
+}
+.contador-vidas {
+    display: flex;
+    justify-content: space-evenly;
+    width: 85%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 25px;
+    padding: 15px;
+
+}
+.contador {
+    width: 40%;
+    max-width: 600px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.contador-jugador {
+    background-color: #8fc699;
+    border: 6px solid #8fc699;
+    box-shadow: 3px 8px 10px 0px #8fc699;
+}
+.contador-enemigo {
+    background-color: #d7784f;
+    border: 6px solid #d7784f;
+    box-shadow: 3px 8px 10px 0px #d7784f;
+}
+
+
+#vidas-jugador {
+    font-size: 3.6rem;
     font-weight: 700;
-    text-transform: uppercase;
 }
-.dranmon-enemy {
-    color: red;
+#vidas-enemigo {
+    font-size: 3.6rem;
     font-weight: 700;
-    text-transform: uppercase;
 }
+
+
 .mensajes {
-    width: 90vw;
+    width: 80vw;
     height: auto;
     margin: 0 auto;
    
 }
 .mensajes p {
-    margin-top: 25px;
-    padding: 10px;
+   
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 20px;
     font-size: 2.6rem;
+    font-weight: 700;
     text-align: center;
 }
 
@@ -244,4 +298,21 @@ input {
     background-image: url(../imgs/pydors.jpg);
     color: whitesmoke;
 
+}
+
+#reiniciar {
+    text-align: center;
+}
+
+#btn-reiniciar {
+    width: 200px;
+    padding: 16px;
+    margin-top: 20px;
+    font-size: 2.8rem;
+    color: white;
+    background-color: rgb(27, 19, 31);
+    border-radius: 10px;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
 }

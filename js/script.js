@@ -41,7 +41,7 @@ function selecionarDranmonJugador() {
 
     //Mostrar el elemento Seleccion de Ataque
     let sectionSeleccionarAtaque = document.getElementById('select-atack')
-    sectionSeleccionarAtaque.style.display = 'block';
+    sectionSeleccionarAtaque.style.display = 'flex';
 
     let inputRangor = document.getElementById('rangor');
     let inputCapron = document.getElementById('capron');
@@ -66,7 +66,7 @@ function selecionarDranmonJugador() {
         spanDranmonJugador.innerHTML = 'Pydors'
     } else {
         alert('Selecciona un Dranmon')
-        sectionSeleccionarDranmon.style.display = 'block'
+        sectionSeleccionarDranmon.style.display = 'flex'
         sectionSeleccionarAtaque.style.display = 'none'
     }
     
@@ -164,12 +164,23 @@ function revisarVidas() {
 
 //Mensaje quien gano en el Enfrentamiento.
 function crearMensaje() {
-    let sectionMensaje = document.getElementById('mensajes');
+    let sectionMensaje = document.getElementById('resultado');
+    let ataqueJugadorMensaje = document.getElementById('ataques-del-jugador');
+    let ataqueEnemigoMensaje = document.getElementById('ataques-del-enemigo');
 
-    let parrafo = document.createElement('p');
-    parrafo.innerHTML = 'Tu Dranmon atacó con ' + ataqueJugador + ' el Dranmon del enemigo atacó con '  + ataqueEnemigo + " " + resultado
+    let nuevoAtaqueDelJugador = document.createElement('p');
+    let nuevoAtaqueDelEnemigo = document.createElement('p');
 
-    sectionMensaje.appendChild(parrafo);
+    sectionMensaje.innerHTML = (resultado)
+    nuevoAtaqueDelJugador.innerHTML = (ataqueJugador)
+    nuevoAtaqueDelEnemigo.innerHTML = (ataqueEnemigo)
+  
+
+  // let parrafo = document.createElement('p');
+  //  parrafo.innerHTML = 'Tu Dranmon atacó con ' + ataqueJugador + ' el Dranmon del enemigo atacó con '  + ataqueEnemigo + " " + resultado
+
+    ataqueJugadorMensaje.appendChild(nuevoAtaqueDelJugador);
+    ataqueEnemigoMensaje.appendChild(nuevoAtaqueDelEnemigo);
 
     //Revisar Vidas
     revisarVidas()  

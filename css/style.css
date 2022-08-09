@@ -40,8 +40,6 @@ header h1 {
     
 
 }
-
-
 main {
     height: auto;
     background-color: #7fabcf;
@@ -49,8 +47,6 @@ main {
     overflow: hidden; 
     background-color: #7fabcf;
     background-size: contain;
-
-
 }
 /***Main Section***/
 .seleccionar-dranmon {
@@ -61,8 +57,6 @@ main {
     flex-direction: column;
     padding: 20px;
     border-radius: 8px;
-  
-  
 }
 .seleccionar-dranmon h2 {
     margin: 20px 10px;
@@ -243,16 +237,12 @@ input:checked + label {
     box-shadow: 3px 8px 10px 0px #d7784f;
     font-weight: 700;
 }
-
-
 #vidas-jugador {
     width: 80px;
     font-size: 6.0rem;
     font-weight: 700;
     color: #303030;
-    box-shadow: 1px 1px 20px 0px #5b9bf5;
-
-    
+    box-shadow: 1px 1px 20px 0px #5b9bf5;   
 }
 #vidas-enemigo {
     width: 80px;
@@ -261,7 +251,6 @@ input:checked + label {
      color: #303030;
     box-shadow: 1px 1px 20px 0px #5b9bf5;
 }
-
 .mensajes {
     width: 300px;
     margin-top: 20px;
@@ -280,7 +269,6 @@ input:checked + label {
     font-weight: bold;
     color: #1d1c1c;
 }
-
 .mensajes-ataques {
     width: 320px;
     margin-top: 25px;
@@ -288,10 +276,8 @@ input:checked + label {
     justify-content: space-evenly;
     background-color: #a9c7dfa2;
     border-radius: 10px;
-    font-weight: 700;
-    
+    font-weight: 700;   
 }
-
 .dranmon-card {
     display: flex;
     align-items: flex-end;

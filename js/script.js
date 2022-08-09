@@ -156,9 +156,9 @@ function combate() {
 //Contador de Vidas
 function revisarVidas() {
     if (vidasEnemigo == 0) {
-        crearMensajeFinal('FELICITACIONES GANASTE')
+        crearMensajeFinal('YOU WIN')
     } else if (vidasJugador == 0) {
-        crearMensajeFinal('LO SIENTO PERDISTE')
+        crearMensajeFinal('YOU LOST')
     }
 }
 

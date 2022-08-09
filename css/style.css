@@ -8,7 +8,6 @@
   html {
     font-size: 62.5%;
     font-family: 'Roboto', sans-serif;
-    font-family: 'Mouse Memoirs', sans-serif;
 
     
   }
@@ -31,12 +30,14 @@ header {
 }
 header h1 {
     padding: 16px;
-    font-size: 8.0rem;
+    font-size: 6.0rem;
     text-align: center;
     text-transform: uppercase;
     color: rgb(39, 39, 39);
-    letter-spacing: 0.5rem;
-    font-family: 'Mouse Memoirs', sans-serif;
+    letter-spacing: -0.5rem;
+    font-family: 'Roboto', sans-serif;
+
+    
 
 }
 
@@ -53,7 +54,7 @@ main {
 }
 /***Main Section***/
 .seleccionar-dranmon {
-    max-width: 1280px;
+    max-width: 980px;
     height: auto;
     margin: 0 auto;
     justify-content: space-evenly;
@@ -84,8 +85,8 @@ main {
 }
 /***Cartas de Personajes***/
 .cards {
-    width: 270px;
-    height: 320px;
+    width: 230px;
+    height: 300px;
     padding: 8px;
     margin: 16px;
     background-color:rgba(85, 84, 90, 0.81);
@@ -98,12 +99,16 @@ main {
 .cards:hover {
     transform: scale(1.1);
     opacity: 1;
-    background-color:rgba(12, 106, 189, 0.81);
+    border: none;
+    background-color:rgba(233, 231, 250, 0.81);
+    box-shadow: 1px 1px 20px 1px rgba(233, 231, 250, 0.81);
+
 }
 .cards img {
-    width: 230px;
-    height: 260px;
+    width: 100px;
+    height: 240px;
     margin-bottom: 5px;
+    
 }
 .cards .name-dr {
     width: 100%;
@@ -115,8 +120,13 @@ main {
 }
 input { 
     display: none;
-
 }
+input:checked + label {
+    
+    background-color:rgba(233, 231, 250, 0.81);
+    box-shadow: 1px 1px 20px 24px rgba(233, 231, 250, 0.81);
+}
+
 .button-select {
     margin-top: 20px;
     text-align: center;
@@ -142,6 +152,7 @@ input {
     background-color:  rgb(42, 41, 41);
 
 }
+
 /***Section Ataques***/
 .seleccion-atack {
     width: 100vw;
@@ -161,9 +172,10 @@ input {
     color: black;
 }
 .seleccion-atack p {
-    font-size: 2.8rem;
-    padding: 6px;
-    color: black;
+    font-size: 2.0rem;
+    padding: 2px;
+    color: rgb(13, 14, 15);
+    text-align: center;
 }
 .atack-buttons {
     margin-top: 25px;
@@ -179,22 +191,23 @@ input {
     font-weight: 700;
     border: none;
     border-radius: 10px;
+    cursor: pointer;
     background-color: #315383;
     color: whitesmoke;
     transition: 150ms all;
 }
 #btn-fuego:hover {
-    background-color: rgb(242, 45, 45);
+    background-color: rgba(242, 45, 45, 0.372);
     color: black;
 }
 
 #btn-agua:hover {
-    background-color: blue;
+    background-color: rgba(0, 0, 255, 0.195);
     color: black;
 }
 
 #btn-tierra:hover {
-    background-color: #804000;
+    background-color: #8040008b;
     color: black;
 }
 .contador-vidas {
@@ -208,65 +221,83 @@ input {
 
 }
 .contador {
-    width: 40%;
+    width: 48%;
     max-width: 600px;
-    height: 160px;
+    height: 168px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    border-radius: 8px;
 }
 .contador-jugador {
-    background-color: #8fc699;
-    border: 6px solid #8fc699;
+    background-color: #e4f0e6c7;
+    border: 6px solid #d7e3d9;
     box-shadow: 3px 8px 10px 0px #8fc699;
+    font-weight: 700;
 }
 .contador-enemigo {
-    background-color: #d7784f;
-    border: 6px solid #d7784f;
+    background-color: #fae8e1b0;
+    border: 6px solid #fff0ea;
     box-shadow: 3px 8px 10px 0px #d7784f;
+    font-weight: 700;
 }
 
 
 #vidas-jugador {
-    font-size: 3.6rem;
+    width: 80px;
+    font-size: 6.0rem;
     font-weight: 700;
+    color: #303030;
+    box-shadow: 1px 1px 20px 0px #5b9bf5;
+
+    
 }
 #vidas-enemigo {
-    font-size: 3.6rem;
+    width: 80px;
+    font-size: 6.0rem;
     font-weight: 700;
+     color: #303030;
+    box-shadow: 1px 1px 20px 0px #5b9bf5;
 }
 
 .mensajes {
+    width: 300px;
     margin-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #7bb3e1;
+    border-radius: 20px;
+    border: 8px solid #315383;
+    
 }
 .mensajes p {
     padding: 30px;
-    font-size: 3.6rem;
+    font-size: 4.0rem;
     font-weight: bold;
+    color: #1d1c1c;
 }
 
 .mensajes-ataques {
+    width: 320px;
     margin-top: 25px;
     display: flex;
     justify-content: space-evenly;
-    width: 80%;
-  
+    background-color: #a9c7dfa2;
+    border-radius: 10px;
+    font-weight: 700;
+    
 }
-
 
 .dranmon-card {
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    width: 250px;
-    height: 300px;
-    background-color: aqua;
+    width: 210px;
+    height: 280px;
     text-align: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -314,11 +345,12 @@ input {
 
 #btn-reiniciar {
     width: 200px;
-    padding: 16px;
+    padding: 12px;
     margin-top: 20px;
     font-size: 2.8rem;
+    font-weight: 700;
     color: white;
-    background-color: rgb(27, 19, 31);
+    background-color: rgba(93, 88, 95, 0.575);
     border-radius: 10px;
     border: none;
     text-transform: uppercase;
